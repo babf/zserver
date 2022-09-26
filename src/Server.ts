@@ -46,6 +46,7 @@ export function createStatic(dir: string) {
     }
 }
 
+// deno-lint-ignore no-explicit-any
 function isHandler(t: any): t is PluginHandler {
     return typeof t === 'function'
 }
